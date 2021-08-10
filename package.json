@@ -1,6 +1,6 @@
 {
   "name": "winalertjs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Simple wrapper for window.alert to raise a custom winalert event instead of displaying alert message in the browser",
   "main": "winalert.js",
   "scripts": {
