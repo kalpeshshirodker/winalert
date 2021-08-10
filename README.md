@@ -8,7 +8,7 @@ The primary motivation for this library, was to overcome the recent anouncement 
 See [Chrome update - Feature: Remove alert(), confirm(), and prompt for cross origin iframes]( https://www.chromestatus.com/feature/5148698084376576) for more information.
 
 # ```winalert``` event argument
-```winalert.js``` will raise a custom event ```winalert``` on the window object. The ```winalert``` event contains the following properties:
+```winalertjs``` will raise a custom event ```winalert``` on the window object. The ```winalert``` event contains the following properties:
 - detail - Contains the actual message passed to the ```window.alert``` 
 - getMessage() - helper function which will return the actual message passed to the ```window.alert```
 
@@ -17,10 +17,19 @@ See [Chrome update - Feature: Remove alert(), confirm(), and prompt for cross or
 ```
 <script type="text/javascript" src="path-to-winalertjs-javascript-file.js"></script>
 ```
+## Activate ```winalert.js```
+```
+winalertjs.activate();
+```
+By default, ```winalert``` events will be raised only for pages which are loaded inside ```Iframe``` only. 
+If you want to raise the ```winalert``` for pages which are not loaded in ```Iframe``` also.
+```
+winalertjs.activate(true);
+```
+
 ## Register Event handler to listen to ```winalert``` event
 ```
 // Use the event arguments for 'winalert', to get the message from the original ```window.alert``` invocation
-// Write the message to console for example
 window.addEventListener('winalert', function(earg) {
   console.log('winalert event handler ::: ' + earg.getMessage());
 });

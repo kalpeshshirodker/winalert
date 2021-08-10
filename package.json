@@ -1,0 +1,28 @@
+{
+  "name": "winalertjs",
+  "version": "1.0.0",
+  "description": "Simple wrapper for window.alert to raise a custom winalert event instead of displaying alert message in the browser",
+  "main": "winalert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalpeshshirodker/winalertjs.git"
+  },
+  "keywords": [
+    "winalert",
+    "winalertjs",
+    "window.alert",
+    "chrome",
+    "google chrome",
+    "event",
+    "javascript"
+  ],
+  "author": "kalpesh.shirodker@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalpeshshirodker/winalertjs/issues"
+  },
+  "homepage": "https://github.com/kalpeshshirodker/winalertjs#readme"
+}
