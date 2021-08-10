@@ -23,7 +23,7 @@ var winalertjs = (function () {
         return this.detail;
       };
 
-      window.dispatchEvent(ssoAlertEvent);
+      window.dispatchEvent(winAlertEvt);
     };
   } catch (e) {
     if (console && console.error) {
